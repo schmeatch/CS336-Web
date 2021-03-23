@@ -21,6 +21,7 @@
     </tr>
    </table>
    <input type="submit" value="Submit" />
+   <a href="login">Login</a>
   </form>
  </div>
 </body>
