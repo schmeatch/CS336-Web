@@ -5,8 +5,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+body {
+  font-family: "Comic Sans MS";
+}
+</style>
 </head>
-<body>
+<body bgcolor="pink">
 	<div align="center">
 		<h1>Login</h1>
 		<form action="<%= request.getContextPath() %>/login" method="post">
