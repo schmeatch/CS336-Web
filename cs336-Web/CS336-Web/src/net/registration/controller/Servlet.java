@@ -8,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import net.registration.dao.UserDAO;
 import net.registration.model.User;
 
@@ -42,20 +41,12 @@ public class Servlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String address = request.getParameter("address");
-        String contact = request.getParameter("contact");
 
         User user = new User();
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
         user.setUsername(username);
         user.setPassword(password);
-        user.setContact(contact);
-        user.setAddress(address);
 
         try {
             userDAO.registerUser(user);
